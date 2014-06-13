@@ -12,7 +12,7 @@ package pertemuan2;
  */
 public class TesMahasiswa {
     public static void main(String[] args) {
-        Mahasiswa m1 = new Mahasiswa(); 
+        Mahasiswa m1 = new Mahasiswa();  // membuat object m1 dari Mahasiswa
         System.out.println("nrp = "+m1.nrp +" ,nama = "+m1.nama);
         
         Mahasiswa m2 = new Mahasiswa("dwica");

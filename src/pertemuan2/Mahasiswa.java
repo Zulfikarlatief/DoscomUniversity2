@@ -21,7 +21,8 @@ public class Mahasiswa {
     
     public  Mahasiswa(String nama){ // constructor dengan tambahan parameter nama
         nrp = 0 ;
-        this.nama = nama;
+        this.nama = nama; // this digunakan unutk menunjuk ke variabel 'nama' global dikarenakan
+                           // variabel paramater juga 'nama'
     }
     
     public Mahasiswa(int nrp,String nama){ // constructor dengan tambahan parameter nrp dan nama 

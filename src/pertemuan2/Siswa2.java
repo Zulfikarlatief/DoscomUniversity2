@@ -4,6 +4,8 @@
  */
 package pertemuan2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author zword
@@ -19,14 +21,19 @@ public class Siswa2 {
  
     public void setNrp(int i) { 
         nrp=i; 
-    } 
+    }
+    
     public int getNrp() { 
         return nrp; 
     }
     
-    public static void main(String[] args) { 
-            Siswa2 anak=new Siswa2(3); //pembuatan object 
+    public static void main(String[] args) {
+            int a;
+            a= 3;
+            Siswa2 anak=new Siswa2(a); //pembuatan object 
+            
             System.out.println(anak.getNrp()); //memangil method get
+            
             anak.setNrp(5); //input nrp , memanggil method set
             System.out.println(anak.getNrp()); 
     } 

@@ -5,16 +5,16 @@
 package pertemuan1;
 
 
-import java.util.Scanner;
 
 /**
  *
  * @author zword
  */
 class IfElse { 
+    
      public static void main (String args[]) { 
          
-          char firstInitial = 'a'; // bisa diinput langsung karena variabel local
+          char firstInitial = 'u'; // bisa diinput langsung karena variabel local
           
           
           if (firstInitial == 'a') // jika first inial a

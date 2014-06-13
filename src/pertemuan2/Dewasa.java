@@ -17,6 +17,11 @@ public class Dewasa extends Bayi{
         System.out.println("Lariii!!");
     }
     
+    public static void main(String[] args) {
+        Bayi d = new Dewasa();
+        d.lari();
+    }
+    
     // istilah overide adalah ketika method dengan nama dan parameter yang sama ditulis kembali
     // berfungsi untuk menulis kembali method dari parent class berisi method yamg kita inginkan
 }

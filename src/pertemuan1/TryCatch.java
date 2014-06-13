@@ -13,9 +13,11 @@ import javax.swing.JOptionPane;
 public class TryCatch {
     public static void main(String args[]){
             int pilihan;
+            
             try{
             pilihan = Integer.parseInt
                     (JOptionPane.showInputDialog("Masukan Pilihan angka 1 / 2"));
+            
             if(pilihan==1)
             {
                 System.out.println("Saya Tampan");
@@ -30,7 +32,8 @@ public class TryCatch {
             }
             catch(Exception e){
                 System.out.println("Tambah ngawur");
-                System.out.println("error "+e.toString());
+                System.out.println("Error "+e);
+
             }
      
     }

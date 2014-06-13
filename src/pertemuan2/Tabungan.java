@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package pertemuan1;
+package pertemuan2;
 
 /**
  *
@@ -13,6 +13,7 @@ package pertemuan1;
 
 
 public class Tabungan {
+    
     int saldo; // variabel saldo / atribut saldo
     
     public Tabungan(int a){

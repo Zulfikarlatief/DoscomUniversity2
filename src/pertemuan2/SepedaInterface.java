@@ -12,4 +12,5 @@ package pertemuan2;
  */
 public interface SepedaInterface {
     public void jalan();
+    
 }

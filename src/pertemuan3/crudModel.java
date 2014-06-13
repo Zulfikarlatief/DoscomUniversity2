@@ -11,9 +11,9 @@ import java.util.Objects;
  * @author zword
  */
 public class crudModel {
-    String nama;
-    String nim;
-    int nilai;
+    private String nama;
+    private String nim;
+    private int nilai;
 
     public String getNama() {
         return nama;
@@ -21,6 +21,14 @@ public class crudModel {
 
     public void setNama(String nama) {
         this.nama = nama;
+    }
+
+    public String getNim() {
+        return nim;
+    }
+
+    public void setNim(String nim) {
+        this.nim = nim;
     }
 
     public int getNilai() {
@@ -31,13 +39,29 @@ public class crudModel {
         this.nilai = nilai;
     }
 
-    public String getNim() {
-        return nim;
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 41 * hash + Objects.hashCode(this.nama);
+        return hash;
     }
 
-    public void setNim(String nim) {
-        this.nim = nim;
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final crudModel other = (crudModel) obj;
+        if (!Objects.equals(this.nama, other.nama)) {
+            return false;
+        }
+        return true;
     }
+
+   
 
   
     

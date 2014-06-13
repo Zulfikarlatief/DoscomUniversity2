@@ -20,7 +20,7 @@ public class SepedaGunung extends Sepeda{
         // constructor sepeda gunung harus dibuat 
         //karena sepeda mempunyai konstruktor yang variabelnya harus di isi 
         
-        super(kecepatan); // kata kunci super digunakan untuk memanggil variabel / method dari parent classnya
+        // kata kunci super digunakan untuk memanggil variabel / method dari parent classnya
     }
     
     public void naikGunung(){ // method tambahan yang hanya dimiliki oleh sepeda gunung

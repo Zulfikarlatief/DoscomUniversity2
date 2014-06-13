@@ -11,14 +11,16 @@ package pertemuan2;
  * @author zword
  */
 public class Sepeda {
-    int kecepatan;
+    int kecepatan ;
 
 
 
     public Sepeda(int kecepatan) {
-        this.kecepatan = kecepatan;
+        this.kecepatan = 30;
     }
      
+    public Sepeda(){
+    }
 
     public int getKecepatan() {
         return kecepatan;

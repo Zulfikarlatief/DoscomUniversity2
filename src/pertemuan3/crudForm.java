@@ -28,7 +28,8 @@ public class crudForm extends javax.swing.JFrame {
     public void isitabel(){
         DefaultTableModel defaultModelTable = 
                 new DefaultTableModel
-                (new Object[][]{}, new String []{"Nama","Nim","Nilai"});
+         (new Object[][]{}, new String []{"Nama","Nim","Nilai"});
+        
         for(crudModel s:list){
             defaultModelTable.addRow
                     (new  Object[]{s.getNama(),s.getNim(),s.getNilai()});
@@ -180,9 +181,12 @@ public class crudForm extends javax.swing.JFrame {
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         // TODO add your handling code here:
         if(jTable1.getSelectedRow()!=-1){
-            jTextField1.setText(jTable1.getValueAt(jTable1.getSelectedRow(), 0).toString());
-            jTextField2.setText(jTable1.getValueAt(jTable1.getSelectedRow(), 1).toString());
-            jTextField3.setText(jTable1.getValueAt(jTable1.getSelectedRow(), 2).toString());        
+            jTextField1.setText
+       (jTable1.getValueAt(jTable1.getSelectedRow(), 0).toString());
+            jTextField2.setText
+       (jTable1.getValueAt(jTable1.getSelectedRow(), 1).toString());
+            jTextField3.setText
+       (jTable1.getValueAt(jTable1.getSelectedRow(), 2).toString());        
         }
     }//GEN-LAST:event_jTable1MouseClicked
 
